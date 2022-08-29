@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <title>Heidi's Funcation</title>
+  <head>
+  <link rel="stylesheet" href="styles.css">
+  <h1 id="title">Heidi's Funcation</h1>
+   </head>
+   <body>
+    <p id="description">Heidi is the best dog in the whole world and I love her. Please put your ideas for the best vacation that she can have and I'll pick the best one!</p>
+    <!--beginning of the form-->
+      <form id="survey-form">
+        <!--Basic Info and Name-->
+        <div class="form-group">
+         <label id="name-label" for="name">Name:</label>
+          <input id="name" type="text" placeholder="Enter Your Name" name="name" required>
+         </div>
+         <!--Email-->
+       <div class="form-group">
+        <label id="email-label" for="email-label">Enter Email:</label>    <input id="email" type="email" placeholder="Email" name="email" required>
+        </div>
+        <!--Age-->
+        <div class="form-group">
+         <label id="number-label" for="number-label">Age</label>
+          <input id="number" type="number" min="18" max="101" placeholder="Age" required>
+          </div>
+          <!--Vacation options-->
+        <div class="form-group">
+          <p class="textarea-desc">Which is Heidi's best pasttime?</p>
+          <select id="dropdown">
+           <option value="">Please select one</option>
+           <option value="one">Go on a hike</option>
+           <option value="two">Give her 4 greenies
+             <option value="three">Belly rub</option>
+             <option value="four">Let her stay in the bed all day</option>
+             </div>
+             <!--Checkboxes-->
+       <div class="form-group">
+        <p class="textarea-desc">Where should we go?</p>
+         <label for="checkbox" id="checkbox">
+           <input type="checkbox" id="checkbox" name="action" value="Hawaii">Hawaii
+           <input type="checkbox" id="checkbox" name="action" value="New York City">New York City
+           <input type="checkbox" id="checkbox" name="action" value="Europe">Europe
+           <p class="textarea-desc">If there is anything that I have missed please let me know in the box below</p>
+  <textarea name="additional-comments" id="additional-comments" placeholder="Additional Comments"></textarea>
+   <input type="submit" value="Submit" id="submit">
+      </body>
+  </html>
