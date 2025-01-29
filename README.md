@@ -1,3 +1,5 @@
 # Heidi-s-Funcation
-Just a dumb form website I'm messing with
-Hopefully will be able to make it prettier by adding a little more CSS to it and adding JS to create a backend. Have no idea what I'm doing but going to learn as I go
+
+Updates have been made to this 1.28.25. Completely revamped with HTML and inline-CSS.
+
+Next will be to come back and add a little more CSS to give it more character.
