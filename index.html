@@ -1,47 +1,110 @@
 <!DOCTYPE html>
-<html>
-  <title>Heidi's Funcation</title>
-  <head>
-  <link rel="stylesheet" href="styles.css">
-  <h1 id="title">Heidi's Funcation</h1>
-   </head>
-   <body>
-    <p id="description">Heidi is the best dog in the whole world and I love her. Please put your ideas for the best vacation that she can have and I'll pick the best one!</p>
-    <!--beginning of the form-->
-      <form id="survey-form">
-        <!--Basic Info and Name-->
-        <div class="form-group">
-         <label id="name-label" for="name">Name:</label>
-          <input id="name" type="text" placeholder="Enter Your Name" name="name" required>
-         </div>
-         <!--Email-->
-       <div class="form-group">
-        <label id="email-label" for="email-label">Enter Email:</label>    <input id="email" type="email" placeholder="Email" name="email" required>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heidi & Sadie's Shrine</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Patrick Hand', cursive; /* Handwritten-style font */
+            background: url('fabric-texture.jpg') repeat; /* Fabric-like background */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #6b4226; /* Warm brown color */
+        }
+
+        /* Scrapbook Section */
+        .scrapbook {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #f9f4e9; /* Light cream color */
+            border: 3px solid #d1b195; /* Brown border */
+            border-radius: 12px;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .photo {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: rotate(-3deg);
+            transition: transform 0.3s ease;
+        }
+
+        .photo:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .page-curl {
+            position: relative;
+            overflow: hidden;
+            margin: 30px 0;
+        }
+
+        .page-curl::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #f9f4e9 50%, transparent 50%);
+            transform: rotate(45deg);
+            transform-origin: bottom right;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #6b4226;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    </style>
+</head>
+<body>
+    <div class="scrapbook">
+        <h1>Welcome to Heidi & Sadie's Shrine</h1>
+
+        <div class="page-curl">
+            <h2>About Heidi</h2>
+            <p>Heidi is a sweet, playful companion who loves belly rubs and sunny naps.</p>
         </div>
-        <!--Age-->
-        <div class="form-group">
-         <label id="number-label" for="number-label">Age</label>
-          <input id="number" type="number" min="18" max="101" placeholder="Age" required>
-          </div>
-          <!--Vacation options-->
-        <div class="form-group">
-          <p class="textarea-desc">Which is Heidi's best pasttime?</p>
-          <select id="dropdown">
-           <option value="">Please select one</option>
-           <option value="one">Go on a hike</option>
-           <option value="two">Give her 4 greenies
-             <option value="three">Belly rub</option>
-             <option value="four">Let her stay in the bed all day</option>
-             </div>
-             <!--Checkboxes-->
-       <div class="form-group">
-        <p class="textarea-desc">Where should we go?</p>
-         <label for="checkbox" id="checkbox">
-           <input type="checkbox" id="checkbox" name="action" value="Hawaii">Hawaii
-           <input type="checkbox" id="checkbox" name="action" value="New York City">New York City
-           <input type="checkbox" id="checkbox" name="action" value="Europe">Europe
-           <p class="textarea-desc">If there is anything that I have missed please let me know in the box below</p>
-  <textarea name="additional-comments" id="additional-comments" placeholder="Additional Comments"></textarea>
-   <input type="submit" value="Submit" id="submit">
-      </body>
-  </html>
+
+        <div class="page-curl">
+            <h2>About Sadie</h2>
+            <p>Sadie is full of energy and always ready for a game of fetch!</p>
+        </div>
+
+        <div>
+            <h2>Photo Memories</h2>
+            <div class="photo">
+                <img src="heidi-photo.jpg" alt="Heidi">
+            </div>
+            <div class="photo">
+                <img src="sadie-photo.jpg" alt="Sadie">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Made with love for Heidi & Sadie ❤️
+    </footer>
+</body>
+</html>
