@@ -73,6 +73,21 @@
             transform-origin: bottom right;
         }
 
+        .polaroid {
+            background: white;
+            padding: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-family: 'Patrick Hand', cursive;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .polaroid img {
+            max-width: 250px;
+            border-radius: 6px;
+        }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -100,12 +115,22 @@
 
         <div>
             <h2>Photo Memories</h2>
-            <div class="photo">
+            <div class="polaroid">
                 <img src="heidi-photo.jpg" alt="Heidi">
+                <p>Heidi, always smiling! ❤️</p>
             </div>
-            <div class="photo">
+            <div class="polaroid">
                 <img src="sadie-photo.jpg" alt="Sadie">
+                <p>Sadie, our little adventurer! 🐾</p>
             </div>
+        </div>
+
+        <div class="page-curl">
+            <h2>Their Favorite Things</h2>
+            <ul>
+                <li>🖍️ Heidi loved the snow and eating crayons</li>
+                <li>🐴 Sadie never let go of her favorite reindeer</li>
+            </ul>
         </div>
     </div>
 
